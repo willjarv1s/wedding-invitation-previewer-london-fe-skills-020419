@@ -1,0 +1,148 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+body {
+  background: black;
+  margin: 30px;
+  line-height: 1.4;
+}
+
+/* Grid */
+
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav invitation"
+    "input invitation"
+    "footer footer";
+  grid-template-columns: repeat(2, 1fr);;
+  grid-gap: 10px;
+}
+
+/* Header */
+
+header {
+  grid-area: header;
+  background-color: ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+}
+
+h1 {
+  font-size: 14px;
+  color: white;
+}
+
+/* Style Selection */
+
+nav {
+  grid-area: nav;
+  background-color: ;
+  
+}
+
+nav ul{
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+h3 {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+
+/* Input Section */
+
+main {
+  grid-area: input;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  border: 2px solid white;
+}
+
+#input-area {
+  width: ;  
+  height: ; 
+  margin: auto; 
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 27px 0;
+  box-sizing: border-box;
+  border: none ;
+  background-color: white;
+  color: black;
+}
+
+::-webkit-input-placeholder {
+  color: black;
+  font-size: 12px;
+}
+
+
+
+/* Invite */
+
+
+aside {
+  grid-area: invitation;
+  background-color: #e0f1f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#live-invite {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.style-1 {
+  font-family: Helvetica;
+  font-size: 20px;
+  background-color: #e0f1f9;
+}
+
+.style-2 {
+  font-family: Helvetica;
+  font-size: 15px;
+  background-color: #f0e3f9;
+}
+
+.style-3 {
+  font-family: Times New Roman;
+  font-size: 8px;
+  background-color: #e8f9e3;
+}
+
+
+
+footer {
+  grid-area: footer;
+  background-color: ;
+}
+
+#footer-text {
+  color: black;
+}
